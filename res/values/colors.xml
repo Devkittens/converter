@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="button_bg">#3e92a4</color>
+    <color name="buttongame_color">#41afc4</color>
+    <color name="main_color">#F06292</color>
+    <color name="main_title">#FFFFFF</color>
+    <color name="main_title_color">#1E88E5</color>
+    <color name="color_primary">@color/brown_400</color>
+    <color name="color_primary_dark">@color/brown_800</color>
+    <color name="btn_play_normal">@color/cyan_200</color>
+    <color name="btn_play_pressed">@color/cyan_700</color>
+    <color name="color_accent">@color/amber_A200</color>
+
+</resources>

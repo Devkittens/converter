@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Converter</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string-array name="listitems">
+        <item >1x4</item>
+        <item >1x6</item>
+        <item >1x8</item>
+        <item >1x10</item>
+        <item >1x12</item>
+        <item >2x4x8</item>
+        <item >2x4x9</item>
+        <item >2x4xRL</item>
+        <item >2x6x8</item>
+        <item >2x6xRL</item>
+    </string-array>
+
+</resources>

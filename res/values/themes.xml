@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="AppTheme.Base" />
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices. -->
+
+    <style name="AppTheme.Base" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here. -->
+        <!-- colorPrimary is used for the default action bar background -->
+        <item name="android:colorPrimary" tools:ignore="NewApi">@color/color_primary</item>
+        <item name="colorPrimary">@color/color_primary</item>
+
+        <!-- colorPrimaryDark is used for the status bar -->
+        <item name="android:colorPrimaryDark" tools:ignore="NewApi">@color/blue_700</item>
+        <item name="colorPrimaryDark">@color/blue_700</item>
+
+        <!-- colorAccent is used as the default value for colorControlActivated
+             which is used to tint widgets -->
+        <item name="android:colorAccent" tools:ignore="NewApi">@color/orange_A400</item>
+        <item name="colorAccent">@color/orange_A400</item>
+        <item name="android:colorControlNormal" tools:ignore="NewApi">@color/color_primary_dark</item>
+        <item name="colorControlNormal">@color/color_primary_dark</item>
+        
+
+        <!-- You can also set colorControlNormal, colorControlActivated
+             colorControlHighlight & colorSwitchThumbNormal. -->
+
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+
+        <item name="android:actionBarTabTextStyle">@style/TabTextStyle</item>
+
+        <!-- Support library compatibility -->
+        <item name="actionBarTabTextStyle">@style/TabTextStyle</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+</resources>
