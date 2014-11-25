@@ -11,5 +11,8 @@
     <color name="btn_play_normal">@color/cyan_200</color>
     <color name="btn_play_pressed">@color/cyan_700</color>
     <color name="color_accent">@color/amber_A200</color>
+    <color name="background_market">@color/amber_A200</color>
+    <color name="background_my">@color/amber_A700</color>
+    <color name="background_currency">@color/brown_200</color>
 
 </resources>

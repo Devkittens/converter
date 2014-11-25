@@ -4,7 +4,11 @@
     <string name="app_name">Converter</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
-    <string-array name="listitems">
+    <string name="dollarmbf">$mbf</string>
+    <string name="dollarm">$m<sup>3</sup></string>
+    <string name="dollareuro">€m<sup>3</sup></string>
+    <string name="m"><sup>3</sup></string>
+    <string-array name="sizes_array">
         <item >1x4</item>
         <item >1x6</item>
         <item >1x8</item>
@@ -15,6 +19,11 @@
         <item >2x4xRL</item>
         <item >2x6x8</item>
         <item >2x6xRL</item>
+    </string-array>
+    <string-array name="currencies_array">
+        <item >€</item>
+        <item >$</item>
+        <item >£</item>
     </string-array>
 
 </resources>

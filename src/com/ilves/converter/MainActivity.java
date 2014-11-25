@@ -4,8 +4,14 @@ import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.TextView;
 
 public class MainActivity extends ActionBarActivity {
+	
+	private int random_price = 330;
+	private float euro_conv = 1.25f;
+	private float div = 0.6461f;
+	private TextView sum;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
