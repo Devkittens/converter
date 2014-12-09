@@ -5,10 +5,10 @@
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
     <string name="dollarmbf">$mbf</string>
-    <string name="dollarm">$m<sup>3</sup></string>
-    <string name="dollareuro">€m<sup>3</sup></string>
-    <string name="m"><sup>3</sup></string>
-    <string-array name="sizes_array">
+    <string name="dollarm">$m<sup><small>3</small></sup></string>
+    <string name="dollareuro">€m<sup><small>3</small></sup></string>
+    <string name="m"><sup><small>3</small></sup></string>
+    <string-array name="dimensions_array">
         <item >1x4</item>
         <item >1x6</item>
         <item >1x8</item>
@@ -21,9 +21,10 @@
         <item >2x6xRL</item>
     </string-array>
     <string-array name="currencies_array">
-        <item >€</item>
-        <item >$</item>
-        <item >£</item>
+        <item >EUR - €</item>
+        <item >USD - $</item>
+        <item >GBP - £</item>
+        <item >SEK - kr</item>
     </string-array>
 
 </resources>

@@ -13,19 +13,14 @@
 
         <TextView
             android:padding="5dp"
-            android:text="Size:"
+            android:text="Dimension:"
             android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium" />
 
         <Spinner
-            android:id="@+id/spinner1"
+            android:id="@+id/spinner_dimensions"
             android:layout_gravity="fill_horizontal"
-            android:entries="@array/sizes_array"
+            android:entries="@array/dimensions_array"
             android:spinnerMode="dropdown" />
-
-        <TextView
-            android:layout_columnSpan="2"
-            android:layout_gravity="fill"
-            android:background="@color/background_market" />
 
         <TextView
             android:layout_gravity="fill"
@@ -67,48 +62,32 @@
             android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium" />
 
         <EditText
-            android:id="@+id/inputtext"
+            android:id="@+id/input_price_mbf"
             android:layout_gravity="fill_horizontal"
             android:hint="Input number"
-            android:inputType="number"
+            android:inputType="numberDecimal"
             android:lines="1"
             android:text="332"
             android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium" />
 
         <TextView
             android:layout_gravity="fill"
-            android:background="@color/background_currency"
             android:padding="5dp"
-            android:text="Currency:"
+            android:text="@string/dollarm"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium" />
+        <TextView
+            android:id="@+id/textview_middle"
+            android:layout_gravity="fill"
+            android:padding="5dp"
+            android:text="214"
             android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium" />
 
-        <LinearLayout
-            android:layout_gravity="fill_horizontal"
-            android:background="@color/background_currency" >
-
-            <Button
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="€" />
-
-            <Button
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="£" />
-
-            <Button
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="$" />
-        </LinearLayout>
 
         <TextView
             android:layout_gravity="fill"
             android:background="@color/background_currency"
-            android:padding="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="10dp"
             android:text="Currency:"
             android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium" />
 
@@ -138,23 +117,40 @@
             </RadioGroup>
         </LinearLayout>
 
-        <Spinner
-            android:id="@+id/spinner2"
-            android:layout_gravity="fill_horizontal"
-            android:entries="@array/currencies_array"
-            android:spinnerMode="dropdown" />
+        <TextView
+            android:layout_gravity="fill"
+            android:background="@color/background_currency"
+            android:paddingLeft="5dp"
+            android:paddingRight="10dp"
+            android:text="Currency:"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium" />
+
+        <LinearLayout
+            android:layout_gravity="fill"
+            android:background="@color/background_currency" >
+
+            <Spinner
+                android:id="@+id/spinner_currencies"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:entries="@array/currencies_array"
+                android:spinnerMode="dropdown"
+                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large" />
+        </LinearLayout>
 
         <TextView
             android:padding="5dp"
             android:text="@string/dollareuro"
-            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium" />
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large" />
 
         <EditText
-            android:id="@+id/inputtext2"
+            android:id="@+id/input_price_currency"
+            android:layout_gravity="fill_horizontal"
             android:hint="Input number"
-            android:inputType="number"
+            android:inputType="numberDecimal"
             android:lines="1"
-            android:text="171" />
+            android:text="171"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large" />
 
         <Space
             android:layout_columnSpan="2"
