@@ -6,13 +6,39 @@
     <color name="main_color">#F06292</color>
     <color name="main_title">#FFFFFF</color>
     <color name="main_title_color">#1E88E5</color>
-    <color name="color_primary">@color/brown_400</color>
-    <color name="color_primary_dark">@color/brown_800</color>
+    <color name="window_background">@color/brown_50</color>
+    <color name="color_primary">@color/teal_500</color>
+    <color name="color_primary_dark">@color/teal_800</color>
     <color name="btn_play_normal">@color/cyan_200</color>
     <color name="btn_play_pressed">@color/cyan_700</color>
     <color name="color_accent">@color/amber_A200</color>
-    <color name="background_market">@color/brown_300</color>
+    <color name="background_market">@color/teal_300</color>
     <color name="background_my">@color/amber_A700</color>
-    <color name="background_currency">@color/brown_200</color>
+    <color name="background_currency">@color/teal_200</color>
+    <color name="currency_header">@color/brown_200</color>
+    <color name="my_price_bg">@color/teal_300</color>
+
+    <!-- Top Bar: #00877a -->
+    <color name="top_bar">#00877a</color>
+    <!-- Main Bar: #009688 teal 500 -->
+    <color name="main_bar">@color/teal_500</color>
+    <!-- Main Symbols: #ffffff -->
+    <color name="main_symbols">@color/brown_200</color>
+    <!-- Background White: #fafafa -->
+    <color name="background_white">@color/grey_50</color>
+    <!-- LighterGreen for icons with white symbols: #80cac4 -->
+    <color name="lighter_green">#80cac4</color>
+    <!-- Normal Text: #4d4d4d -->
+    <color name="normal_text">#4d4d4d</color>
+    <!-- Large Text: #999999 -->
+    <color name="large_text">#999999</color>
+    <!-- Green Text: #64beb6 -->
+    <color name="green_text">#64beb6</color>
+    <!-- Write Lines: #d5d5d5 -->
+    <color name="write_lines">#d5d5d5</color>
+    <!-- Checkbox: #bbbbbb -->
+    <color name="checkbox">#bbbbbb</color>
+    <!-- Dropdown Icon: #bbbbbb -->
+    <color name="dropdown_icon">#bbbbbb</color>
 
 </resources>

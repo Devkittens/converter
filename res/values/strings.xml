@@ -4,6 +4,8 @@
     <string name="app_name">Converter</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="my_price">My price</string>
+    <string name="currencies">Currencies</string>
     <string name="dollarmbf">$mbf</string>
     <string name="dollarm">$m<sup><small>3</small></sup></string>
     <string name="dollareuro">€m<sup><small>3</small></sup></string>

@@ -2,159 +2,175 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
     android:orientation="vertical"
     tools:context="com.ilves.converter.MainActivity" >
 
-    <GridLayout
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:columnCount="2"
-        android:rowCount="5" >
+        android:layout_height="wrap_content"
+        android:background="@color/my_price_bg"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingTop="20dp" >
 
-        <TextView
-            android:padding="5dp"
-            android:text="Dimension:"
-            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium" />
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1" >
 
-        <Spinner
-            android:id="@+id/spinner_dimensions"
-            android:layout_gravity="fill_horizontal"
-            android:entries="@array/dimensions_array"
-            android:spinnerMode="dropdown" />
-
-        <TextView
-            android:layout_gravity="fill"
-            android:background="@color/background_market" />
-
-        <TextView
-            android:layout_gravity="fill_horizontal"
-            android:background="@color/background_market"
-            android:padding="5dp"
-            android:text="Market Price"
-            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large" />
-
-        <TextView
-            android:layout_gravity="fill_horizontal"
-            android:background="@color/background_market"
-            android:padding="5dp"
-            android:text="@string/dollarmbf"
-            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium" />
-
-        <TextView
-            android:layout_gravity="fill_horizontal"
-            android:background="@color/background_market"
-            android:padding="5dp"
-            android:text="330"
-            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium" />
-
-        <Space />
-
-        <TextView
-            android:layout_gravity="fill_horizontal"
-            android:padding="5dp"
-            android:text="My Price"
-            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large" />
-
-        <TextView
-            android:layout_gravity="fill"
-            android:padding="5dp"
-            android:text="@string/dollarmbf"
-            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium" />
-
-        <EditText
-            android:id="@+id/input_price_mbf"
-            android:layout_gravity="fill_horizontal"
-            android:hint="Input number"
-            android:inputType="numberDecimal"
-            android:lines="1"
-            android:text="332"
-            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium" />
-
-        <TextView
-            android:layout_gravity="fill"
-            android:padding="5dp"
-            android:text="@string/dollarm"
-            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium" />
-        <TextView
-            android:id="@+id/textview_middle"
-            android:layout_gravity="fill"
-            android:padding="5dp"
-            android:text="214"
-            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium" />
-
-
-        <TextView
-            android:layout_gravity="fill"
-            android:background="@color/background_currency"
-            android:paddingLeft="5dp"
-            android:paddingRight="10dp"
-            android:text="Currency:"
-            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium" />
+            <TextView
+                android:id="@+id/currency_symbol"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="20sp" />
+        </FrameLayout>
 
         <LinearLayout
-            android:layout_gravity="fill"
-            android:background="@color/background_currency" >
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
 
-            <RadioGroup
+            <TextView
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal" >
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/my_price"
+                android:textSize="20sp" />
 
-                <RadioButton
-                    android:layout_width="0dp"
-                    android:layout_weight="1"
-                    android:text="€" />
-
-                <RadioButton
-                    android:layout_width="0dp"
-                    android:layout_weight="1"
-                    android:text="£" />
-
-                <RadioButton
-                    android:layout_width="0dp"
-                    android:layout_weight="1"
-                    android:text="$" />
-            </RadioGroup>
+            <EditText
+                android:id="@+id/input_price_mbf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:hint="Input number"
+                android:inputType="numberDecimal"
+                android:lines="1"
+                android:paddingBottom="10dp"
+                android:text="332" />
         </LinearLayout>
 
-        <TextView
-            android:layout_gravity="fill"
-            android:background="@color/background_currency"
-            android:paddingLeft="5dp"
-            android:paddingRight="10dp"
-            android:text="Currency:"
-            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium" />
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="20sp" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="-20dp"
+        android:background="@drawable/backgroung_w_triangle" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp" >
 
         <LinearLayout
-            android:layout_gravity="fill"
-            android:background="@color/background_currency" >
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" >
 
-            <Spinner
-                android:id="@+id/spinner_currencies"
+            <TextView
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:entries="@array/currencies_array"
-                android:spinnerMode="dropdown"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="20dp"
+                android:text="@string/dollarm"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textview_middle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="214"
+                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:src="@drawable/ic_tree" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="20dp"
+                android:text="@string/dollareuro"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/input_price_currency"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill_horizontal"
+                android:gravity="center"
+                android:hint="Input number"
+                android:inputType="numberDecimal"
+                android:lines="1"
+                android:text="171"
                 android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large" />
         </LinearLayout>
+    </LinearLayout>
 
-        <TextView
-            android:padding="5dp"
-            android:text="@string/dollareuro"
-            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large" />
+    <TextView
+        android:id="@+id/textview_dimension"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="fill"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="2x4xRL"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium" />
 
-        <EditText
-            android:id="@+id/input_price_currency"
-            android:layout_gravity="fill_horizontal"
-            android:hint="Input number"
-            android:inputType="numberDecimal"
-            android:lines="1"
-            android:text="171"
-            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/currency_header"
+        android:paddingBottom="5dp"
+        android:paddingLeft="24dp"
+        android:paddingTop="5dp"
+        android:text="@string/currencies"
+        android:textSize="16sp" />
 
-        <Space
-            android:layout_columnSpan="2"
-            android:layout_gravity="fill" />
-    </GridLayout>
+    <ListView
+        android:id="@+id/currency_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </ListView>
 
 </LinearLayout>

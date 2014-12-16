@@ -1,0 +1,165 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.ilves.converter.MainActivity" >
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:columnCount="2"
+        android:rowCount="5" >
+
+        <TextView
+            android:padding="5dp"
+            android:text="Dimension:"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium" />
+
+        <Spinner
+            android:id="@+id/spinner_dimensions"
+            android:layout_gravity="fill_horizontal"
+            android:entries="@array/dimensions_array"
+            android:spinnerMode="dropdown" />
+
+        <TextView
+            android:layout_gravity="fill"
+            android:background="@color/background_market" />
+
+        <TextView
+            android:layout_gravity="fill_horizontal"
+            android:background="@color/background_market"
+            android:padding="5dp"
+            android:text="Market Price"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large" />
+
+        <TextView
+            android:layout_gravity="fill_horizontal"
+            android:background="@color/background_market"
+            android:padding="5dp"
+            android:text="@string/dollarmbf"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium" />
+
+        <TextView
+            android:layout_gravity="fill_horizontal"
+            android:background="@color/background_market"
+            android:padding="5dp"
+            android:text="330"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium" />
+
+        <Space />
+
+        <TextView
+            android:layout_gravity="fill_horizontal"
+            android:padding="5dp"
+            android:text="My Price"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large" />
+
+        <TextView
+            android:layout_gravity="fill"
+            android:padding="5dp"
+            android:text="@string/dollarmbf"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium" />
+
+        <EditText
+            android:id="@+id/input_price_mbf"
+            android:layout_gravity="fill_horizontal"
+            android:hint="Input number"
+            android:inputType="numberDecimal"
+            android:lines="1"
+            android:text="332"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium" />
+
+        <TextView
+            android:layout_gravity="fill"
+            android:padding="5dp"
+            android:text="@string/dollarm"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium" />
+        <TextView
+            android:id="@+id/textview_middle"
+            android:layout_gravity="fill"
+            android:padding="5dp"
+            android:text="214"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium" />
+
+
+        <TextView
+            android:layout_gravity="fill"
+            android:background="@color/background_currency"
+            android:paddingLeft="5dp"
+            android:paddingRight="10dp"
+            android:text="Currency:"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium" />
+
+        <LinearLayout
+            android:layout_gravity="fill"
+            android:background="@color/background_currency" >
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="€" />
+
+                <RadioButton
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="£" />
+
+                <RadioButton
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="$" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <TextView
+            android:layout_gravity="fill"
+            android:background="@color/background_currency"
+            android:paddingLeft="5dp"
+            android:paddingRight="10dp"
+            android:text="Currency:"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium" />
+
+        <LinearLayout
+            android:layout_gravity="fill"
+            android:background="@color/background_currency" >
+
+            <Spinner
+                android:id="@+id/spinner_currencies"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:entries="@array/currencies_array"
+                android:spinnerMode="dropdown"
+                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large" />
+        </LinearLayout>
+
+        <TextView
+            android:padding="5dp"
+            android:text="@string/dollareuro"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large" />
+
+        <EditText
+            android:id="@+id/input_price_currency"
+            android:layout_gravity="fill_horizontal"
+            android:hint="Input number"
+            android:inputType="numberDecimal"
+            android:lines="1"
+            android:text="171"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large" />
+
+        <Space
+            android:layout_columnSpan="2"
+            android:layout_gravity="fill" />
+        <ProgressBar
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         style="@android:style/Widget.ProgressBar.Large"
+         android:layout_marginRight="5dp" />
+    </GridLayout>
+
+</LinearLayout>
